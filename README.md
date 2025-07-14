@@ -4,7 +4,7 @@
 
 ## 🚀 Demo
 
-Xem ứng dụng trực tiếp tại: [https://yourusername.github.io/bc-bundleproductapp](https://yourusername.github.io/bc-bundleproductapp)
+Xem ứng dụng trực tiếp tại: [https://allcommerce.github.io/bc-bundleproductapp-draft](https://allcommerce.github.io/bc-bundleproductapp-draft)
 
 ## ✨ Tính năng
 
@@ -30,8 +30,8 @@ Xem ứng dụng trực tiếp tại: [https://yourusername.github.io/bc-bundlep
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/bc-bundleproductapp.git
-cd bc-bundleproductapp
+git clone https://github.com/allcommerce/bc-bundleproductapp-draft.git
+cd bc-bundleproductapp-draft
 
 # Cài đặt dependencies
 npm install

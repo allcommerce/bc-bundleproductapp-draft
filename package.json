@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Bundle Product Management Application",
   "main": "index.html",
-  "homepage": "https://yourusername.github.io/bc-bundleproductapp",
+  "homepage": "https://allcommerce.github.io/bc-bundleproductapp-draft",
   "scripts": {
     "dev": "live-server",
     "build": "echo 'Build complete'",
@@ -21,6 +21,6 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/bc-bundleproductapp.git"
+    "url": "https://github.com/allcommerce/bc-bundleproductapp-draft.git"
   }
 }

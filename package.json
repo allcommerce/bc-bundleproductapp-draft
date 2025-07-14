@@ -1,0 +1,26 @@
+{
+  "name": "bc-bundleproductapp",
+  "version": "1.0.0",
+  "description": "Bundle Product Management Application",
+  "main": "index.html",
+  "homepage": "https://allcommerce.github.io/bc-bundleproductapp-draft",
+  "scripts": {
+    "dev": "live-server",
+    "build": "echo 'Build complete'",
+    "test": "echo 'No tests specified'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .",
+    "publish": "npm run deploy"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "gh-pages": "^6.1.1"
+  },
+  "keywords": ["bundle", "product", "management", "github-pages"],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allcommerce/bc-bundleproductapp-draft.git"
+  }
+}

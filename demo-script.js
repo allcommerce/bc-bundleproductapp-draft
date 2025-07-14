@@ -3,7 +3,59 @@ const bundleData = {
     mainProduct: {
         name: "Gaming Laptop ROG Strix G15",
         price: 45990000,
-        originalPrice: 52990000
+        originalPrice: 52990000,
+        options: [
+            {
+                name: "RAM",
+                type: "radio",
+                required: true,
+                values: [
+                    { label: "16GB DDR4", value: "16gb", priceAdjustment: 0 },
+                    { label: "32GB DDR4", value: "32gb", priceAdjustment: 4000000 },
+                    { label: "64GB DDR4", value: "64gb", priceAdjustment: 12000000 }
+                ]
+            },
+            {
+                name: "Storage",
+                type: "radio", 
+                required: true,
+                values: [
+                    { label: "512GB SSD", value: "512gb", priceAdjustment: 0 },
+                    { label: "1TB SSD", value: "1tb", priceAdjustment: 3000000 },
+                    { label: "2TB SSD", value: "2tb", priceAdjustment: 8000000 }
+                ]
+            },
+            {
+                name: "VGA",
+                type: "radio",
+                required: true,
+                values: [
+                    { label: "RTX 3070 8GB", value: "rtx3070", priceAdjustment: 0 },
+                    { label: "RTX 3080 10GB", value: "rtx3080", priceAdjustment: 8000000 },
+                    { label: "RTX 4070 12GB", value: "rtx4070", priceAdjustment: 15000000 }
+                ]
+            },
+            {
+                name: "Màu sắc",
+                type: "color",
+                required: true,
+                values: [
+                    { label: "Đen Matrix", value: "black", priceAdjustment: 0, image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%23000000'/%3E%3C/svg%3E" },
+                    { label: "Xám Titanium", value: "gray", priceAdjustment: 0, image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%23708090'/%3E%3C/svg%3E" },
+                    { label: "Trắng Moonlight", value: "white", priceAdjustment: 500000, image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%23F8F8FF'/%3E%3C/svg%3E" }
+                ]
+            },
+            {
+                name: "Bảo hành mở rộng",
+                type: "checkbox",
+                required: false,
+                values: [
+                    { label: "Bảo hành 3 năm", value: "3year", priceAdjustment: 2000000 },
+                    { label: "Bảo hành quốc tế", value: "international", priceAdjustment: 1500000 },
+                    { label: "Chăm sóc premium", value: "premium", priceAdjustment: 3000000 }
+                ]
+            }
+        ]
     },
     bundleItems: [
         {
@@ -14,16 +66,16 @@ const bundleData = {
             discountValue: 10,
             minQty: 1,
             maxQty: 2,
-            image: "https://via.placeholder.com/80x80/28a745/ffffff?text=Mouse",
+            image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%2328a745'/%3E%3Ctext x='40' y='45' text-anchor='middle' fill='white' font-size='10'%3EMouse%3C/text%3E%3C/svg%3E",
             options: [
                 {
                     name: "Màu sắc",
                     type: "color",
                     required: true,
                     values: [
-                        { label: "Đen", value: "black", priceAdjustment: 0, image: "https://via.placeholder.com/80x80/000000/ffffff?text=Black" },
-                        { label: "Trắng", value: "white", priceAdjustment: 0, image: "https://via.placeholder.com/80x80/ffffff/000000?text=White" },
-                        { label: "RGB", value: "rgb", priceAdjustment: 200000, image: "https://via.placeholder.com/80x80/ff69b4/ffffff?text=RGB" }
+                        { label: "Đen", value: "black", priceAdjustment: 0, image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%23000000'/%3E%3Ctext x='40' y='45' text-anchor='middle' fill='white' font-size='12'%3EĐen%3C/text%3E%3C/svg%3E" },
+                        { label: "Trắng", value: "white", priceAdjustment: 0, image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%23FFFFFF' stroke='%23cccccc'/%3E%3Ctext x='40' y='45' text-anchor='middle' fill='black' font-size='12'%3ETrắng%3C/text%3E%3C/svg%3E" },
+                        { label: "RGB", value: "rgb", priceAdjustment: 200000, image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cdefs%3E%3ClinearGradient id='rainbow' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:red'/%3E%3Cstop offset='33%25' style='stop-color:green'/%3E%3Cstop offset='66%25' style='stop-color:blue'/%3E%3Cstop offset='100%25' style='stop-color:purple'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='80' height='80' fill='url(%23rainbow)'/%3E%3Ctext x='40' y='45' text-anchor='middle' fill='white' font-size='12'%3ERGB%3C/text%3E%3C/svg%3E" }
                     ]
                 },
                 {
@@ -46,7 +98,7 @@ const bundleData = {
             discountValue: 15,
             minQty: 1,
             maxQty: 1,
-            image: "https://via.placeholder.com/80x80/dc3545/ffffff?text=Keyboard",
+            image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%23dc3545'/%3E%3Ctext x='40' y='45' text-anchor='middle' fill='white' font-size='9'%3EKeyboard%3C/text%3E%3C/svg%3E",
             options: [
                 {
                     name: "Switch",
@@ -89,7 +141,7 @@ const bundleData = {
             discountValue: 20,
             minQty: 1,
             maxQty: 2,
-            image: "https://via.placeholder.com/80x80/6f42c1/ffffff?text=Monitor",
+            image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%236f42c1'/%3E%3Ctext x='40' y='45' text-anchor='middle' fill='white' font-size='9'%3EMonitor%3C/text%3E%3C/svg%3E",
             options: [
                 {
                     name: "Độ phân giải",
@@ -149,9 +201,11 @@ const buyNowBtn = document.querySelector('.btn-buy-now');
 
 let selectedBundles = [];
 let mainProductQty = 1;
+let mainProductSelectedOptions = {};
 
 // Initialize the demo
 document.addEventListener('DOMContentLoaded', function() {
+    generateMainProductOptions();
     generateBundleItems();
     setupEventListeners();
     updateSummary();
@@ -326,6 +380,104 @@ function setupEventListeners() {
 
     // Setup bundle-specific event listeners
     setupBundleEventListeners();
+}
+
+function generateMainProductOptions() {
+    const mainOptionsContainer = document.getElementById('main-product-options');
+    if (!bundleData.mainProduct.options) return;
+    
+    mainOptionsContainer.innerHTML = `
+        <h3>🔧 Cấu hình sản phẩm</h3>
+        ${generateOptionsHTML(bundleData.mainProduct.options, 'main-product')}
+    `;
+    
+    // Setup main product option event listeners
+    setTimeout(() => {
+        setupMainProductEventListeners();
+        initializeMainProductOptions();
+    }, 100);
+}
+
+function setupMainProductEventListeners() {
+    // Main product option change events
+    document.querySelectorAll('#main-product-options input, #main-product-options select').forEach(input => {
+        input.addEventListener('change', handleMainProductOptionChange);
+    });
+
+    // Main product radio and checkbox option styling
+    document.querySelectorAll('#main-product-options .radio-option').forEach(option => {
+        const input = option.querySelector('input[type="radio"]');
+        input.addEventListener('change', function() {
+            // Remove selected class from siblings
+            this.closest('.radio-options').querySelectorAll('.radio-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            // Add selected class to current option
+            if (this.checked) {
+                option.classList.add('selected');
+            }
+        });
+        
+        // Set initial state
+        if (input.checked) {
+            option.classList.add('selected');
+        }
+    });
+
+    document.querySelectorAll('#main-product-options .checkbox-option').forEach(option => {
+        const input = option.querySelector('input[type="checkbox"]');
+        input.addEventListener('change', function() {
+            if (this.checked) {
+                option.classList.add('selected');
+            } else {
+                option.classList.remove('selected');
+            }
+        });
+    });
+}
+
+function initializeMainProductOptions() {
+    // Set default selections and update price
+    mainProductSelectedOptions = getSelectedOptions(document.getElementById('main-product-options'), 'main-product');
+    updateMainProductPrice();
+}
+
+function handleMainProductOptionChange(event) {
+    mainProductSelectedOptions = getSelectedOptions(document.getElementById('main-product-options'), 'main-product');
+    updateMainProductPrice();
+    updateSummary();
+}
+
+function updateMainProductPrice() {
+    let basePrice = bundleData.mainProduct.price;
+    
+    // Apply option adjustments
+    if (mainProductSelectedOptions) {
+        Object.values(mainProductSelectedOptions).forEach(option => {
+            if (Array.isArray(option)) {
+                // Checkbox options
+                option.forEach(opt => {
+                    basePrice += opt.priceAdjustment;
+                });
+            } else {
+                // Radio/select options
+                basePrice += option.priceAdjustment;
+            }
+        });
+    }
+    
+    // Update price display
+    const currentPriceElement = document.getElementById('main-current-price');
+    const originalPriceElement = document.getElementById('main-original-price');
+    
+    if (currentPriceElement) {
+        currentPriceElement.textContent = formatPrice(basePrice);
+    }
+    
+    // Update original price if it changed significantly
+    if (originalPriceElement && basePrice > bundleData.mainProduct.originalPrice) {
+        originalPriceElement.textContent = formatPrice(basePrice + (bundleData.mainProduct.originalPrice - bundleData.mainProduct.price));
+    }
 }
 
 function setupBundleEventListeners() {
@@ -538,6 +690,27 @@ function calculateBundlePrice(bundle) {
     return calculateDiscountedPrice(basePrice, bundle.discountType, bundle.discountValue);
 }
 
+function calculateMainProductPrice() {
+    let basePrice = bundleData.mainProduct.price;
+    
+    // Apply option adjustments
+    if (mainProductSelectedOptions) {
+        Object.values(mainProductSelectedOptions).forEach(option => {
+            if (Array.isArray(option)) {
+                // Checkbox options
+                option.forEach(opt => {
+                    basePrice += opt.priceAdjustment;
+                });
+            } else {
+                // Radio/select options
+                basePrice += option.priceAdjustment;
+            }
+        });
+    }
+    
+    return basePrice;
+}
+
 function calculateDiscountedPrice(originalPrice, discountType, discountValue) {
     if (discountType === 'percentage') {
         return originalPrice * (1 - discountValue / 100);
@@ -551,7 +724,8 @@ function updateSummary() {
     selectedBundlesContainer.innerHTML = '';
     
     let totalSavings = 0;
-    let totalPrice = bundleData.mainProduct.price * mainProductQty;
+    let mainProductPrice = calculateMainProductPrice();
+    let totalPrice = mainProductPrice * mainProductQty;
     
     // Add selected bundles to summary
     selectedBundles.forEach(bundle => {
@@ -658,22 +832,8 @@ function handleBuyNow() {
 }
 
 function setupImageGallery() {
-    const mainImage = document.querySelector('.main-image img');
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    
-    // Add some sample images
-    const images = [
-        'https://via.placeholder.com/500x400/667eea/ffffff?text=Gaming+Laptop+Front',
-        'https://via.placeholder.com/500x400/764ba2/ffffff?text=Gaming+Laptop+Side', 
-        'https://via.placeholder.com/500x400/667eea/ffffff?text=Gaming+Laptop+Back'
-    ];
-    
-    thumbnails.forEach((thumb, index) => {
-        if (images[index]) {
-            thumb.src = images[index].replace('500x400', '80x60');
-            thumb.dataset.fullsize = images[index];
-        }
-    });
+    // Image gallery is now set up in HTML with data URLs
+    // No additional setup needed
 }
 
 function switchMainImage(imageSrc) {

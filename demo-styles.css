@@ -161,6 +161,21 @@ body {
     font-weight: bold;
 }
 
+/* Main Product Options */
+.main-product-options {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 2px solid #e9ecef;
+}
+
+.main-product-options h3 {
+    color: #667eea;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
 /* Bundle Section */
 .bundle-section {
     background: #f8f9fa;

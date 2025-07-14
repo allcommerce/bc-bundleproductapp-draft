@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle Product Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quản lý Bundle Products</h1>
+        </header>
+        
+        <main id="main-content">
+            <!-- Bundle Products List Page -->
+            <div id="list-page" class="page active">
+                <div class="page-header">
+                    <h2>Danh sách Bundle Products</h2>
+                    <button id="add-new-btn" class="btn btn-primary">Thêm Bundle Product mới</button>
+                </div>
+                
+                <div class="table-container">
+                    <table id="bundle-table" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên Bundle Product</th>
+                                <th>Sản phẩm chính</th>
+                                <th>Số sản phẩm con</th>
+                                <th>Ngày tạo</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bundle-tbody">
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Add/Edit Bundle Product Page -->
+            <div id="form-page" class="page">
+                <div class="page-header">
+                    <h2 id="form-title">Thêm Bundle Product mới</h2>
+                    <button id="back-btn" class="btn btn-secondary">Quay lại</button>
+                </div>
+                
+                <form id="bundle-form" class="bundle-form">
+                    <div class="form-group">
+                        <label for="bundle-name">Tên Bundle Product:</label>
+                        <input type="text" id="bundle-name" name="bundleName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="main-product">Sản phẩm chính:</label>
+                        <div class="autocomplete-container">
+                            <input type="text" id="main-product" name="mainProduct" placeholder="Tìm kiếm sản phẩm chính..." required autocomplete="off">
+                            <div id="main-product-suggestions" class="suggestions-list"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Sản phẩm con trong bundle</h3>
+                        <button type="button" id="add-product-btn" class="btn btn-secondary">Thêm sản phẩm</button>
+                        
+                        <div class="table-container">
+                            <table id="child-products-table" class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Sản phẩm</th>
+                                        <th>Loại giảm giá</th>
+                                        <th>Giá trị giảm</th>
+                                        <th>Số lượng tối thiểu</th>
+                                        <th>Số lượng tối đa</th>
+                                        <th>Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="child-products-tbody">
+                                    <!-- Child products will be added dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Lưu Bundle Product</button>
+                        <button type="button" id="cancel-btn" class="btn btn-secondary">Hủy</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

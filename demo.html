@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Laptop - Demo Storefront</title>
+    <link rel="stylesheet" href="demo-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="store-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="store-logo">TechStore</h1>
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link">← Quay lại quản lý</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="product-page">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="#">Trang chủ</a> / <a href="#">Laptop</a> / <span>Gaming Laptop</span>
+            </div>
+
+            <!-- Product Section -->
+            <div class="product-section">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="https://via.placeholder.com/500x400/667eea/ffffff?text=Gaming+Laptop" alt="Gaming Laptop">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://via.placeholder.com/80x60/667eea/ffffff?text=1" alt="Thumbnail 1" class="thumbnail active">
+                        <img src="https://via.placeholder.com/80x60/764ba2/ffffff?text=2" alt="Thumbnail 2" class="thumbnail">
+                        <img src="https://via.placeholder.com/80x60/667eea/ffffff?text=3" alt="Thumbnail 3" class="thumbnail">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1 class="product-title">Gaming Laptop ROG Strix G15</h1>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">(124 đánh giá)</span>
+                    </div>
+                    
+                    <div class="price-section">
+                        <span class="current-price">45.990.000 VNĐ</span>
+                        <span class="original-price">52.990.000 VNĐ</span>
+                        <span class="discount-badge">-13%</span>
+                    </div>
+
+                    <!-- Bundle Product Section -->
+                    <div class="bundle-section">
+                        <div class="bundle-header">
+                            <h3>🎁 Mua kèm với giá ưu đãi</h3>
+                            <p class="bundle-subtitle">Chọn các sản phẩm bên dưới để được giảm giá đặc biệt</p>
+                        </div>
+
+                        <div class="bundle-products">
+                            <!-- Gaming Mouse Bundle Item -->
+                            <div class="bundle-item">
+                                <div class="bundle-checkbox">
+                                    <input type="checkbox" id="gaming-mouse" class="bundle-check" data-product="Gaming Mouse">
+                                    <label for="gaming-mouse" class="checkbox-label"></label>
+                                </div>
+                                <div class="bundle-image">
+                                    <img src="https://via.placeholder.com/80x80/28a745/ffffff?text=Mouse" alt="Gaming Mouse">
+                                </div>
+                                <div class="bundle-details">
+                                    <h4 class="bundle-name">Gaming Mouse RGB</h4>
+                                    <div class="bundle-pricing">
+                                        <span class="bundle-original">1.500.000 VNĐ</span>
+                                        <span class="bundle-discounted">1.350.000 VNĐ</span>
+                                        <span class="bundle-discount">-10%</span>
+                                    </div>
+                                    <div class="quantity-selector">
+                                        <label>Số lượng:</label>
+                                        <select class="qty-select" data-min="1" data-max="2">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Gaming Keyboard Bundle Item -->
+                            <div class="bundle-item">
+                                <div class="bundle-checkbox">
+                                    <input type="checkbox" id="gaming-keyboard" class="bundle-check" data-product="Gaming Keyboard">
+                                    <label for="gaming-keyboard" class="checkbox-label"></label>
+                                </div>
+                                <div class="bundle-image">
+                                    <img src="https://via.placeholder.com/80x80/dc3545/ffffff?text=Keyboard" alt="Gaming Keyboard">
+                                </div>
+                                <div class="bundle-details">
+                                    <h4 class="bundle-name">Gaming Keyboard Mechanical</h4>
+                                    <div class="bundle-pricing">
+                                        <span class="bundle-original">2.500.000 VNĐ</span>
+                                        <span class="bundle-discounted">2.125.000 VNĐ</span>
+                                        <span class="bundle-discount">-15%</span>
+                                    </div>
+                                    <div class="quantity-selector">
+                                        <label>Số lượng:</label>
+                                        <select class="qty-select" data-min="1" data-max="1">
+                                            <option value="1">1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Monitor Bundle Item -->
+                            <div class="bundle-item">
+                                <div class="bundle-checkbox">
+                                    <input type="checkbox" id="gaming-monitor" class="bundle-check" data-product="Gaming Monitor">
+                                    <label for="gaming-monitor" class="checkbox-label"></label>
+                                </div>
+                                <div class="bundle-image">
+                                    <img src="https://via.placeholder.com/80x80/6f42c1/ffffff?text=Monitor" alt="Gaming Monitor">
+                                </div>
+                                <div class="bundle-details">
+                                    <h4 class="bundle-name">Gaming Monitor 27" 144Hz</h4>
+                                    <div class="bundle-pricing">
+                                        <span class="bundle-original">8.500.000 VNĐ</span>
+                                        <span class="bundle-discounted">6.800.000 VNĐ</span>
+                                        <span class="bundle-discount">-20%</span>
+                                    </div>
+                                    <div class="quantity-selector">
+                                        <label>Số lượng:</label>
+                                        <select class="qty-select" data-min="1" data-max="2">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bundle Summary -->
+                        <div class="bundle-summary">
+                            <div class="summary-row main-product">
+                                <span class="item-name">Gaming Laptop ROG Strix G15</span>
+                                <span class="item-price">45.990.000 VNĐ</span>
+                            </div>
+                            <div id="selected-bundles" class="selected-bundles">
+                                <!-- Selected bundle items will appear here -->
+                            </div>
+                            <div class="summary-divider"></div>
+                            <div class="summary-row total-savings">
+                                <span class="savings-label">Tổng tiết kiệm:</span>
+                                <span id="total-savings" class="savings-amount">0 VNĐ</span>
+                            </div>
+                            <div class="summary-row total-price">
+                                <span class="total-label">Tổng cộng:</span>
+                                <span id="total-price" class="total-amount">45.990.000 VNĐ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="product-actions">
+                        <div class="quantity-section">
+                            <label for="main-qty">Số lượng:</label>
+                            <div class="qty-controls">
+                                <button type="button" class="qty-btn minus">-</button>
+                                <input type="number" id="main-qty" value="1" min="1" max="10">
+                                <button type="button" class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                        <button class="btn-add-cart">Thêm vào giỏ hàng</button>
+                        <button class="btn-buy-now">Mua ngay</button>
+                    </div>
+
+                    <!-- Product Features -->
+                    <div class="product-features">
+                        <ul>
+                            <li>✓ Chip AMD Ryzen 7 5800H</li>
+                            <li>✓ RAM 16GB DDR4</li>
+                            <li>✓ SSD 512GB NVMe</li>
+                            <li>✓ VGA RTX 3070 8GB</li>
+                            <li>✓ Màn hình 15.6" Full HD 144Hz</li>
+                            <li>✓ Bảo hành 24 tháng</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bundle Benefits -->
+            <div class="bundle-benefits">
+                <h3>Lợi ích khi mua Bundle</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💰</div>
+                        <h4>Tiết kiệm chi phí</h4>
+                        <p>Giảm giá lên đến 20% khi mua kèm</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🚚</div>
+                        <h4>Miễn phí vận chuyển</h4>
+                        <p>Giao hàng miễn phí toàn quốc cho bundle</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🛠️</div>
+                        <h4>Cài đặt miễn phí</h4>
+                        <p>Hỗ trợ cài đặt và cấu hình tại nhà</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎯</div>
+                        <h4>Tương thích hoàn hảo</h4>
+                        <p>Các sản phẩm đã được test tương thích</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="store-footer">
+        <div class="container">
+            <p>&copy; 2024 TechStore. Đây là trang demo để minh họa hiển thị Bundle Product.</p>
+            <p><a href="index.html">← Quay lại ứng dụng quản lý Bundle Product</a></p>
+        </div>
+    </footer>
+
+    <script src="demo-script.js"></script>
+</body>
+</html>

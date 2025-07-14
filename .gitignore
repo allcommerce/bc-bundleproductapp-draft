@@ -90,4 +90,4 @@ Thumbs.db
 *~
 
 # gh-pages deployment
-.gh-pages/
+.gh-pages/.claude/
